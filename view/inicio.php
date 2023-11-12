@@ -34,14 +34,15 @@ $titulo = $configC->titleWeb();
     <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
     <!-- Fontawesome PRO -->
     <link rel="stylesheet" href="https://site-assets.fontawesome.com/releases/v6.4.2/css/all.css">
-    <!-- JS -->
-    <?php require_once "links/jsh.php"; ?>
     <!-- CSS -->
     <?php require_once "links/css.php"; ?>
+    <!-- JS -->
+    <?php require_once "links/jsh.php"; ?>
 </head>
 
 <body>
-
+    <script src="https://www.gstatic.com/dialogflow-console/fast/messenger/bootstrap.js?v=1"></script>
+    <df-messenger chat-icon="<?php $configC->rutaImage("bot.png") ?>" intent="WELCOME" chat-title="Marielly&#x27;s" agent-id="7beab3ee-bdf2-440e-b826-a19c8cbfc635" language-code="es"></df-messenger>
     <?php
     $xhr = false;
     require_once "./controller/viewcontroller.php";
@@ -63,6 +64,7 @@ $titulo = $configC->titleWeb();
     ?>
 
     <?php include "layouts/footer.php"; ?>
+    <!-- <img class="chatbot" src="<?php $configC->rutaImage("bot.png") ?>" alt=""> -->
     <?php require_once "links/jsf.php"; ?>
 </body>
 

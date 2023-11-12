@@ -59,4 +59,11 @@ class mainModel
         }
         return $alerta;
     }
+
+    protected function imagenProducto($ruta)
+    {
+        $directorio = 'https://confeccionesmilagros.friendsdevaj.com/view/' . $ruta;
+
+        return $directorio;
+    }
 }

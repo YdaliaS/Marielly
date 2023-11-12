@@ -1,0 +1,1 @@
+<script src="<?php $configC->rutaJs("slider.js") ?>"></script>
